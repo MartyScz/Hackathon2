@@ -7,7 +7,6 @@ import AddProject from "./pages/AddProject";
 import Project from "./pages/Project";
 import Profile from "./pages/Profile";
 import LoginContext from "./contexts/LoginContext";
-
 import "./App.css";
 
 function App() {
