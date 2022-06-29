@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ProSidebar,
@@ -15,17 +15,17 @@ import { IoRocketSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import swal from "sweetalert";
 import fusee from "../assets/fusee.png";
-import LoginContext from "../contexts/LoginContext";
+// import LoginContext from "../contexts/LoginContext";
 import "./NavBar.css";
 
 export default function NavBar() {
   const [menuCollapse, setMenuCollapse] = useState(true);
-  const { setIsConnected } = useContext(LoginContext);
-
+  // const { setIsConnected } = useContext(LoginContext);
+  /* ne pas oublier d'importer useContext */
   const width = menuCollapse ? "80px" : "215px";
 
   const handleSubmit = () => {
-    setIsConnected(false);
+    // setIsConnected(false);
     swal("Good bye!", "Disconnected successfully", "success");
   };
 
