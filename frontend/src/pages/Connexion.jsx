@@ -7,6 +7,7 @@ import Motion from "../components/Motion";
 function Connexion() {
   return (
     <div className="connexion-container">
+      <h2>INTO</h2>
       <div className="div-logo-connexion">
         <img className="logo-connexion" src={logo} alt="logo apside bleu" />
         <h4

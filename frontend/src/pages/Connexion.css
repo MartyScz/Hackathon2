@@ -5,7 +5,11 @@
   height: 2vh;
 }
 .div-logo-connexion img {
-  /* margin-top: 5vh; */
   width: 40vw;
   height: 40vh;
+}
+
+.connexion-container h2 {
+  color: white;
+  font-size: 2rem;
 }
