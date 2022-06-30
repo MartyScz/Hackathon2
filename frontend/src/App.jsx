@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
+import Connexion from "./pages/Connexion";
 import Home from "./pages/Home";
 import AddProject from "./pages/AddProject";
 import Project from "./pages/Project";
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Connexion />} />
         <Route path="/home" element={<Home />} />
         <Route path="/addProject" element={<AddProject />} />
         <Route path="/project" element={<Project />} />

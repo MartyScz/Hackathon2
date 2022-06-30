@@ -1,3 +1,11 @@
+import Connexion from "./Connexion";
+
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <div className="Home-container">
+      <div className="Home-connexion">
+        <Connexion />
+      </div>
+    </div>
+  );
 }

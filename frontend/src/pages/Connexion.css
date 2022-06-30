@@ -1,0 +1,11 @@
+.connexion-container {
+  background-color: #222222;
+}
+.div-logo-connexion {
+  height: 2vh;
+}
+.div-logo-connexion img {
+  /* margin-top: 5vh; */
+  width: 40vw;
+  height: 40vh;
+}

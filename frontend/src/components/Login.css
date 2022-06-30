@@ -19,12 +19,12 @@
 ::placeholder {
   padding-left: 20px;
   font-size: 1.1rem;
-  color: #bdc3cf;
+  color: #5abdb2;
 }
 
 .inputLogPassword,
 .inputEmail {
-  color: var(--dark-blue);
+  color: #ff0055;
 }
 
 .inputLogPassword {
@@ -35,13 +35,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 60vw;
   max-width: 500px;
-  height: 15vw;
+  height: 60vw;
   max-height: 70px;
-  background-color: var(--mint-blue);
+  background-color: pink;
   color: var(--white);
-  border-radius: 10px;
+  border-radius: 50%;
   font-family: var(--font);
   text-decoration: none;
 }
@@ -53,7 +53,7 @@
     height: 3.8rem;
   }
   .inputLogPassword {
-    margin-bottom: 15vh;
+    margin-bottom: 8vh;
   }
   .loginbutton {
     width: 30vw;

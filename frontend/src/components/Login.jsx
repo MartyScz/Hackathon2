@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css";
 import axios from "axios";
 import swal from "sweetalert";
@@ -15,7 +15,7 @@ function Login() {
         title: "Error!",
         text: "Please specify email and password",
         icon: "error",
-        confirmButtonText: "Cool",
+        confirmButtonText: "Done !",
       });
     } else {
       axios
@@ -41,7 +41,7 @@ function Login() {
           type="text"
           name="email"
           id="email"
-          placeholder="mariedurant@apside.com"
+          placeholder="nancy.goldin@apside.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -54,11 +54,11 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {/* <Link to="/connection/bonjour"> */}
-        <button className="loginbutton" type="submit" onClick={handleSubmit}>
-          CONNEXION
-        </button>
-        {/* </Link> */}
+        <Link to="/home">
+          <button className="loginbutton" type="submit" onClick={handleSubmit}>
+            CONNEXION
+          </button>
+        </Link>
       </form>
     </div>
   );
