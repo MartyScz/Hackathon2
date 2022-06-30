@@ -9,8 +9,12 @@ import {
   SidebarContent,
 } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import { FiSearch, FiLogOut } from "react-icons/fi";
+import {
+  FaAngleLeft,
+  FaAngleRight,
+  FaSearch,
+  FaSignOutAlt,
+} from "react-icons/fa";
 import { IoRocketSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import swal from "sweetalert";
@@ -49,7 +53,7 @@ export default function NavBar() {
         </SidebarHeader>
         <SidebarContent>
           <Menu iconShape="square">
-            <MenuItem icon={<FiSearch className="svg-icons" />}>
+            <MenuItem icon={<FaSearch className="svg-icons" />}>
               <Link to="/home" />
               Find a project
             </MenuItem>
@@ -75,7 +79,7 @@ export default function NavBar() {
           <Menu iconShape="square">
             <MenuItem
               onClick={handleSubmit}
-              icon={<FiLogOut className="svg-icons" />}
+              icon={<FaSignOutAlt className="svg-icons" />}
             >
               <Link to="/logout" />
               Logout
