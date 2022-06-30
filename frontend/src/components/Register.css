@@ -1,0 +1,60 @@
+.register-title h2 {
+  color: var(--white);
+  font-family: var(--font);
+  text-align: center;
+  margin-top: 17vh;
+  font-weight: 300;
+  margin-bottom: 1vh;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputFirstname,
+.inputLastname,
+.inputOffice,
+.inputEmail,
+.inputPassword {
+  width: 90vw;
+  border-radius: 10px;
+  height: 3.5rem;
+  border: none;
+  margin-bottom: 40px;
+  background-color: #222222;
+}
+
+.inputFirstname,
+.inputLastname,
+.inputOffice,
+.inputEmail,
+.inputPassword,
+::placeholder {
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #5abdb2;
+}
+
+.div-arrow-return {
+  margin-left: -1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .inputFirstname,
+  .inputLastname,
+  .inputOffice,
+  .inputEmail,
+  .inputPassword {
+    width: 30vw;
+    height: 3.8rem;
+  }
+  .register-title h2 {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}

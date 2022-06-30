@@ -42,80 +42,93 @@ export default function Home() {
           Search 🚀
         </button>
 
-      <h2>Upcoming Projects :</h2>
-      <div className="futureProjContainer">
-        <div className="redCard">
-          <img
-            className="projectImage"
-            src={`${analytics}`}
-            alt="project-pic"
-          />
-          <ProjectCard data={ProjectsList[3]} />
+        <h2>Upcoming Projects :</h2>
+        <div className="futureProjContainer">
+          <div className="redCard">
+            <img
+              className="projectImage"
+              src={`${analytics}`}
+              alt="project-pic"
+            />
+            <ProjectCard data={ProjectsList[3]} />
+          </div>
+          <div className="greenCard">
+            <img
+              className="projectImage"
+              src={`${oblivion}`}
+              alt="project-pic"
+            />
+            <ProjectCard data={ProjectsList[4]} />{" "}
+          </div>
+          <div className="blueCard">
+            <img className="projectImage" src={`${admin}`} alt="project-pic" />
+            <ProjectCard data={ProjectsList[1]} />
+          </div>
         </div>
-        <div className="greenCard">
-          <img className="projectImage" src={`${oblivion}`} alt="project-pic" />
-          <ProjectCard data={ProjectsList[4]} />{" "}
-        </div>
-        <div className="blueCard">
-          <img className="projectImage" src={`${admin}`} alt="project-pic" />
-          <ProjectCard data={ProjectsList[1]} />
-        </div>
-      </div>
-      {/* <Link to="/projects/upcoming"> */}
-      <button className="moreproject" type="button">
-        More projects
-      </button>
-      {/* </Link> */}
+        {/* <Link to="/projects/upcoming"> */}
+        <button className="moreproject" type="button">
+          More projects
+        </button>
+        {/* </Link> */}
 
-      <h2>Projects in progress :</h2>
-      <div className="pastProjContainer">
-        <div className="blueCard">
-          <img className="projectImage" src={`${rainbow}`} alt="project-pic" />
-          <ProjectCard data={ProjectsList[5]} />
+        <h2>Projects in progress :</h2>
+        <div className="pastProjContainer">
+          <div className="blueCard">
+            <img
+              className="projectImage"
+              src={`${rainbow}`}
+              alt="project-pic"
+            />
+            <ProjectCard data={ProjectsList[5]} />
+          </div>
+          <div className="redCard">
+            <img
+              className="projectImage"
+              src={`${marketplace}`}
+              alt="project-pic"
+            />
+            <ProjectCard data={ProjectsList[7]} />
+          </div>
+          <div className="greenCard">
+            <img
+              className="projectImage"
+              src={`${talentshow}`}
+              alt="project-pic"
+            />
+            <ProjectCard data={ProjectsList[9]} />
+          </div>
         </div>
-        <div className="redCard">
-          <img
-            className="projectImage"
-            src={`${marketplace}`}
-            alt="project-pic"
-          />
-          <ProjectCard data={ProjectsList[7]} />
-        </div>
-        <div className="greenCard">
-          <img
-            className="projectImage"
-            src={`${talentshow}`}
-            alt="project-pic"
-          />
-          <ProjectCard data={ProjectsList[9]} />
-        </div>
-      </div>
-      {/* <Link to="/projects/inprogress"> */}
-      <button className="moreproject" type="button">
-        More projects
-      </button>
-      {/* </Link> */}
+        {/* <Link to="/projects/inprogress"> */}
+        <button className="moreproject" type="button">
+          More projects
+        </button>
+        {/* </Link> */}
 
-      <h2>Finished Projects :</h2>
-      <div className="presentProjContainer">
-        <div className="greenCard">
-          <img className="projectImage" src={`${seo}`} alt="project-pic" />
-          <ProjectCard data={ProjectsList[6]} />
+        <h2>Finished Projects :</h2>
+        <div className="presentProjContainer">
+          <div className="greenCard">
+            <img className="projectImage" src={`${seo}`} alt="project-pic" />
+            <ProjectCard data={ProjectsList[6]} />
+          </div>
+          <div className="blueCard">
+            <img
+              className="projectImage"
+              src={`${sanchez}`}
+              alt="project-pic"
+            />
+            <ProjectCard data={ProjectsList[10]} />
+          </div>
+          <div className="redCard">
+            <img className="projectImage" src={`${bakery}`} alt="project-pic" />
+            <ProjectCard data={ProjectsList[2]} />
+          </div>
         </div>
-        <div className="blueCard">
-          <img className="projectImage" src={`${sanchez}`} alt="project-pic" />
-          <ProjectCard data={ProjectsList[10]} />
-        </div>
-        <div className="redCard">
-          <img className="projectImage" src={`${bakery}`} alt="project-pic" />
-          <ProjectCard data={ProjectsList[2]} />
-        </div>
+        {/* <Link to="/projects/finished"> */}
+        <button className="moreproject" type="button">
+          More projects
+        </button>
+        {/* </Link> */}
       </div>
-      {/* <Link to="/projects/finished"> */}
-      <button className="moreproject" type="button">
-        More projects
-      </button>
-      {/* </Link> */}
-    </div>
+    </>
   );
 }
