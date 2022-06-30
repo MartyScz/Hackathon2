@@ -1,33 +1,107 @@
 /* Css for managing the Home Page */
-/* .home-container {
-} */
+
+.home-container h2 {
+  padding: 20px;
+  text-align: center;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .futureProjContainer {
   display: flex;
   flex-direction: row;
+  gap: 50px;
+  justify-content: center;
 }
+
 .presentProjContainer {
   display: flex;
   flex-direction: row;
+  gap: 50px;
+  justify-content: center;
 }
 
 .pastProjContainer {
   display: flex;
   flex-direction: row;
+  gap: 50px;
+  justify-content: center;
 }
 
+.moreproject {
+  color: white;
+  margin: 50px 25px;
+  height: 70px;
+  width: 140px;
+  border-radius: 50px;
+  align-items: center;
+  border: none;
+  background-color: #222;
+  transition: transform 0.2;
+}
+
+.moreproject:hover {
+  transform: scale(1.1);
+}
 /* CSS for the individual card of a project appearing in the Home Page */
 .card-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  height: 200px;
+  width: 400px;
+}
+
+.redCard {
+  background-color: #f05;
+  border-radius: 30% 30% 25% 10%;
+  display: flex;
   align-items: center;
-  background-color: red;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.redCard:hover {
+  transform: scale(1.1);
+}
+
+.greenCard {
+  background-color: #0c8;
+  border-radius: 25% 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.greenCard:hover {
+  transform: scale(1.1);
+}
+
+.blueCard {
+  background-color: #0099ff;
+  border-radius: 25% 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.blueCard:hover {
+  transform: scale(1.1);
 }
 
 .projectImage {
-  height: 150px;
-  width: auto;
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: 50px 25px 0px 0px;
 }
 
 /* .projectName {
