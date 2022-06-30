@@ -22,7 +22,7 @@ export default function NavBar() {
   const [menuCollapse, setMenuCollapse] = useState(true);
   // const { setIsConnected } = useContext(LoginContext);
   /* ne pas oublier d'importer useContext */
-  const width = menuCollapse ? "80px" : "215px";
+  const width = menuCollapse ? "80px" : "230px";
 
   const handleSubmit = () => {
     // setIsConnected(false);
