@@ -52,5 +52,15 @@ code {
 }
 
 button {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(0.5px + 1.2vmin);
+  border-radius: 20px;
+}
+
+.ButtonMoreProjects {
+  display: flex;
+  justify-content: end;
+  border-radius: 20px;
+}
+button.ButtonMoreProjects {
+  display: flex;
 }
