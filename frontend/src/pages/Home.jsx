@@ -1,36 +1,67 @@
-import Counter from "@components/Counter";
-import logo from "@assets/logo.svg";
+import React, { useState } from "react";
+// import { Link } from "react-router-dom";
+import SearchBar from "../components/SearchBar";
+import ProjectCard from "../components/ProjectCard";
+import ProjectsList from "../data/ProjectsList";
+import "../components/ProjectCard.css";
 
 export default function Home() {
+  const [search, setSearch] = useState(false);
+  const [searchTags, setSearchTags] = useState("");
+  const [searchCity, setSearchCity] = useState("");
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    setSearch(!search);
+  };
+
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
+    <div className="home-container">
+      <div>
+        <SearchBar
+          searchTags={searchTags}
+          setSearchTags={setSearchTags}
+          searchCity={searchCity}
+          setSearchCity={setSearchCity}
+        />
+      </div>
 
-      <Counter />
+      <button type="submit" onClick={handleSearch}>
+        Search 🚀
+      </button>
 
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+      {/* {projects.filter((project) => project.ownerOffice === searchCity)
+        .map((project) => <ProjectCard data={project} />)} */}
+
+      <h2>Upcoming Projects :</h2>
+      <div className="futureProjContainer">
+        <ProjectCard data={ProjectsList[3]} />
+        <ProjectCard data={ProjectsList[4]} />
+        <ProjectCard data={ProjectsList[1]} />
+      </div>
+      {/* <Link to="/projects/upcoming"> */}
+      <button type="button">More projects</button>
+      {/* </Link> */}
+
+      <h2>Projects in progress :</h2>
+      <div className="pastProjContainer">
+        <ProjectCard data={ProjectsList[5]} />
+        <ProjectCard data={ProjectsList[7]} />
+        <ProjectCard data={ProjectsList[9]} />
+      </div>
+      {/* <Link to="/projects/inprogress"> */}
+      <button type="button">More projects</button>
+      {/* </Link> */}
+
+      <h2>Finished Projects :</h2>
+      <div className="presentProjContainer">
+        <ProjectCard data={ProjectsList[5]} />
+        <ProjectCard data={ProjectsList[3]} />
+        <ProjectCard data={ProjectsList[1]} />
+      </div>
+      {/* <Link to="/projects/finished"> */}
+      <button type="button">More projects</button>
+      {/* </Link> */}
+    </div>
   );
 }
