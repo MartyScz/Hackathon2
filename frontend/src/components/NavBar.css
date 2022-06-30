@@ -1,0 +1,101 @@
+#header {
+  position: fixed;
+  font-family: "poppins", sans-serif;
+}
+
+#header .pro-sidebar {
+  height: 100vh;
+}
+
+#header .closemenu {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  line-height: 2px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 25px;
+  top: 85px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+#header .pro-sidebar {
+  width: 100%;
+  min-width: 100%;
+}
+
+#header .pro-sidebar.collapsed {
+  width: 10px;
+  min-width: 81px;
+}
+
+#header .pro-sidebar-inner {
+  background-color: rgb(61, 61, 61);
+  box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout {
+  overflow-y: hidden;
+}
+
+.Logo {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  transition: width 0.5s;
+}
+
+.Logo-collapse {
+  width: 80px;
+  height: auto;
+  transition: width 0.5s;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+  padding: 0 8px;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul {
+  padding: 10 5px;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item:hover {
+  transition-duration: 0.4s;
+  background-color: rgb(228, 228, 228, 0.6);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#header
+  .pro-sidebar-inner
+  .pro-sidebar-layout
+  ul
+  .pro-inner-item
+  .pro-icon-wrapper {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#header
+  .pro-sidebar-inner
+  .pro-sidebar-layout
+  ul
+  .pro-inner-item
+  .pro-icon-wrapper
+  .pro-item-content {
+  color: #000;
+}
+
+@media only screen and (max-width: 720px) {
+  html {
+    overflow: hidden;
+  }
+}
+
+.svg-icons {
+  width: 25px;
+  height: 25px;
+}
