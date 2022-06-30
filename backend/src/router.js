@@ -1,13 +1,16 @@
 const express = require("express");
+const { UserController } = require("./controllers");
 
-const { ItemController } = require("./controllers");
+const routes = express.Router();
+const { authorization } = require("./middlewares/authMiddleware");
+const { isAdmin } = require("./middlewares/isAdminMiddleware");
 
-const router = express.Router();
+routes.get("/users", authorization, isAdmin, UserController.browse);
+routes.post("/users/register", UserController.register);
+routes.post("/users/login", UserController.login);
+routes.get("/users", UserController.browse);
+routes.get("/users/logout", authorization, UserController.logout);
+routes.put("/users/:id", UserController.edit);
+routes.delete("/users/:id", UserController.delete);
 
-router.get("/items", ItemController.browse);
-router.get("/items/:id", ItemController.read);
-router.put("/items/:id", ItemController.edit);
-router.post("/items", ItemController.add);
-router.delete("/items/:id", ItemController.delete);
-
-module.exports = router;
+module.exports = routes;
