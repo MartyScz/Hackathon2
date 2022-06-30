@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ProSidebar,
   Menu,
@@ -20,13 +20,16 @@ import "./NavBar.css";
 
 export default function NavBar() {
   const [menuCollapse, setMenuCollapse] = useState(true);
+  const navigate = useNavigate();
   // const { setIsConnected } = useContext(LoginContext);
   /* ne pas oublier d'importer useContext */
-  const width = menuCollapse ? "80px" : "215px";
+  const width = menuCollapse ? "80px" : "230px";
 
   const handleSubmit = () => {
     // setIsConnected(false);
-    swal("Good bye!", "Disconnected successfully", "success");
+    swal("Good bye!", "Disconnected successfully", "success").then(() =>
+      navigate("/")
+    );
   };
 
   const menuIconClick = () =>

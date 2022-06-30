@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Register.css";
 import axios from "axios";
 import swal from "sweetalert";
+import NavBar from "./NavBar";
 
 function Register() {
   const [firstname, setFirstname] = useState("");
@@ -38,67 +39,70 @@ function Register() {
   };
 
   return (
-    <div className="register">
-      <div className="register-title">
-        <h2>Procédons ensemble à ton inscription</h2>
-        <form className="form-register" onSubmit={handleSubmit}>
-          <input
-            className="inputFirstname"
-            type="firstname"
-            name="firstname"
-            id="firstname"
-            placeholder="Nancy"
-            value={firstname}
-            onChange={(e) => setFirstname(e.target.value)}
-          />
-          <input
-            className="inputLastname"
-            type="lastname"
-            name="lastname"
-            id="lastname"
-            placeholder="Goldin"
-            value={lastname}
-            onChange={(e) => setLastname(e.target.value)}
-          />
-          <input
-            className="inputOffice"
-            type="office"
-            name="office"
-            id="office"
-            placeholder="Bruxelle"
-            value={office}
-            onChange={(e) => setOffice(e.target.value)}
-          />
-          <input
-            className="inputEmail"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="nancy.goldin@apside.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            className="inputPassword"
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <Link to="/connection">
-            <button
-              className="loginbutton"
-              type="submit"
-              onClick={handleSubmit}
-            >
-              REGISTRATION
-            </button>
-          </Link>
-        </form>
+    <>
+      <NavBar />
+      <div className="register">
+        <div className="register-title">
+          <h2>Subscribe !</h2>
+          <form className="form-register" onSubmit={handleSubmit}>
+            <input
+              className="inputFirstname"
+              type="firstname"
+              name="firstname"
+              id="firstname"
+              placeholder="Nancy"
+              value={firstname}
+              onChange={(e) => setFirstname(e.target.value)}
+            />
+            <input
+              className="inputLastname"
+              type="lastname"
+              name="lastname"
+              id="lastname"
+              placeholder="Goldin"
+              value={lastname}
+              onChange={(e) => setLastname(e.target.value)}
+            />
+            <input
+              className="inputOffice"
+              type="office"
+              name="office"
+              id="office"
+              placeholder="Bruxelle"
+              value={office}
+              onChange={(e) => setOffice(e.target.value)}
+            />
+            <input
+              className="inputEmail"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="nancy.goldin@apside.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              className="inputPassword"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <Link to="/home">
+              <button
+                className="loginbutton"
+                type="submit"
+                onClick={handleSubmit}
+              >
+                SUBMIT
+              </button>
+            </Link>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Register;

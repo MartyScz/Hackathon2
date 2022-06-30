@@ -13,28 +13,28 @@
   align-items: center;
 }
 
+.inputFirstname,
+.inputLastname,
+.inputOffice,
 .inputEmail,
-.inputPassword,
-.inputConfirmPassword {
+.inputPassword {
   width: 90vw;
   border-radius: 10px;
   height: 3.5rem;
   border: none;
   margin-bottom: 40px;
+  background-color: #222222;
 }
 
+.inputFirstname,
+.inputLastname,
+.inputOffice,
 .inputEmail,
 .inputPassword,
-.inputConfirmPassword,
 ::placeholder {
   padding-left: 20px;
   font-size: 1.1rem;
-  color: #bdc3cf;
-}
-
-.inputConfirmPassword,
-.inputEmail {
-  color: var(--dark-blue);
+  color: #5abdb2;
 }
 
 .div-arrow-return {
@@ -42,14 +42,16 @@
 }
 
 @media screen and (min-width: 768px) {
+  .inputFirstname,
+  .inputLastname,
+  .inputOffice,
   .inputEmail,
-  .inputPassword,
-  .inputConfirmPassword {
+  .inputPassword {
     width: 30vw;
     height: 3.8rem;
   }
   .register-title h2 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
 
