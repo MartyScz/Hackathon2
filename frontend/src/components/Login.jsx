@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Login.css";
 import axios from "axios";
 import swal from "sweetalert";
+import NavBar from "./NavBar";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -34,33 +35,40 @@ function Login() {
   };
 
   return (
-    <div className="login">
-      <form className="form-login">
-        <input
-          className="inputEmail"
-          type="text"
-          name="email"
-          id="email"
-          placeholder="nancy.goldin@apside.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          className="inputLogPassword"
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Mot de passe"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Link to="/home">
-          <button className="loginbutton" type="submit" onClick={handleSubmit}>
-            CONNEXION
-          </button>
-        </Link>
-      </form>
-    </div>
+    <>
+      <NavBar />
+      <div className="login">
+        <form className="form-login">
+          <input
+            className="inputEmail"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="nancy.goldin@apside.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            className="inputLogPassword"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Mot de passe"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <Link to="/home">
+            <button
+              className="loginbutton"
+              type="submit"
+              onClick={handleSubmit}
+            >
+              LOG IN
+            </button>
+          </Link>
+        </form>
+      </div>
+    </>
   );
 }
 

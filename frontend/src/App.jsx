@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import AddProject from "./pages/AddProject";
 import Project from "./pages/Project";
 import Profile from "./pages/Profile";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 import "./App.css";
 
@@ -13,6 +15,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Connexion />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/addProject" element={<AddProject />} />
         <Route path="/project" element={<Project />} />

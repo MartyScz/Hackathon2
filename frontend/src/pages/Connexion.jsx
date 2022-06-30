@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Connexion.css";
 import logo from "../assets/logo-apside-blanc.svg";
 import Motion from "../components/Motion";
@@ -10,18 +10,21 @@ function Connexion() {
       <h2>INTO</h2>
       <div className="div-logo-connexion">
         <img className="logo-connexion" src={logo} alt="logo apside bleu" />
-        <h4
+
+        <Link
+          to="/Login"
           className="log-button"
-          style={{ color: "white", marginLeft: "510px", marginTop: "-130px" }}
+          style={{ color: "white", marginLeft: "510px", marginTop: "-600px" }}
         >
           CONNEXION
-        </h4>
-        <h4
-          className="log-button"
+        </Link>
+        <Link
+          to="/Register"
+          className="register-button"
           style={{ color: "white", marginLeft: "903px", marginTop: "180px" }}
         >
           REGISTER
-        </h4>
+        </Link>
       </div>
 
       <Motion />
