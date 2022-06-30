@@ -5,9 +5,12 @@ import Fake2 from "../assets/FakeProject2.jpg";
 // import ProjectCard from "../components/ProjectCard";
 // import ProjectsList from "../data/ProjectsList";
 import "./Profile.css";
+import NavBar from "../components/NavBar";
+
 
 export default function Profile() {
   return (
+  <NavBar />
     <div>
       <h2>Upcoming Projects :</h2>
       <div className="ButtonMoreProjects">
