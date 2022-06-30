@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from "react";
-import NavBar from "@components/NavBar";
+import NavBar from "../components/NavBar";
 import "./AddProject.css";
 
 export default function AddProject() {

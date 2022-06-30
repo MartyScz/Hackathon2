@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsList from "../data/ProjectsList";
+import NavBar from "../components/NavBar";
 import "../components/ProjectCard.css";
 import analytics from "../assets/analytics.jpg";
 import oblivion from "../assets/oblivion.jpg";
@@ -25,19 +26,21 @@ export default function Home() {
   };
 
   return (
-    <div className="home-container">
-      <div>
-        <SearchBar
-          searchTags={searchTags}
-          setSearchTags={setSearchTags}
-          searchCity={searchCity}
-          setSearchCity={setSearchCity}
-        />
-      </div>
+    <>
+      <NavBar />
+      <div className="home-container">
+        <div>
+          <SearchBar
+            searchTags={searchTags}
+            setSearchTags={setSearchTags}
+            searchCity={searchCity}
+            setSearchCity={setSearchCity}
+          />
+        </div>
 
-      <button type="submit" onClick={handleSearch}>
-        Search 🚀
-      </button>
+        <button type="submit" onClick={handleSearch}>
+          Search 🚀
+        </button>
 
       <h2>Upcoming Projects :</h2>
       <div className="futureProjContainer">
