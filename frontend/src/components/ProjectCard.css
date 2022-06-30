@@ -1,0 +1,46 @@
+/* Css for managing the Home Page */
+/* .home-container {
+} */
+
+.futureProjContainer {
+  display: flex;
+  flex-direction: row;
+}
+.presentProjContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.pastProjContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+/* CSS for the individual card of a project appearing in the Home Page */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+
+.projectImage {
+  height: 150px;
+  width: auto;
+}
+
+/* .projectName {
+}
+
+.projectOwner {
+}
+
+.projectOffice {
+}
+
+.description {
+}
+
+.startDate {
+} */
