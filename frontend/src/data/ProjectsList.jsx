@@ -20,7 +20,7 @@ const ProjectsList = [
     description:
       "This project aims to develop an advanced admin section that allows the users to modify and manage their website on their own",
     tags: ["developpement", "web", "dev", "react", "express", "javascript"],
-    startDate: "31/10/2022",
+    startDate: "29/01/2023",
     image: "",
   },
   {
@@ -31,7 +31,7 @@ const ProjectsList = [
     description:
       "Let's make a powerfull BREAD template that will be reusable in every case to manage the routes and access to the servers of our applications.",
     tags: ["developpement", "web", "dev", "symphony", "php", "backend"],
-    startDate: "13/11/2019",
+    startDate: "13/07/2021",
     image: "",
   },
   {
@@ -42,7 +42,7 @@ const ProjectsList = [
     description:
       "The idea is to generalise datatypes and create an analysis template for all the future applications requiring financial insights.",
     tags: ["data", "analytics", "python", "marketing"],
-    startDate: "29/06/2022",
+    startDate: "09/07/2022",
     image: "",
   },
   {
@@ -71,7 +71,7 @@ const ProjectsList = [
     description:
       "We want to developp an inclusive tool that will analyse and give headlines to a project to check the adaptability of it.",
     tags: ["developpement", "web", "dev", "ruby", "php", "backend"],
-    startDate: "12/12/2012",
+    startDate: "12/05/2022",
     image: "",
   },
   {
@@ -82,7 +82,7 @@ const ProjectsList = [
     description:
       "The SEO adapter project has the aim to give ideas and generate a list of tags according to a website and its targeted market.",
     tags: ["marketing", "digital", "seo", "python", "AI", "bigdata"],
-    startDate: "29/06/2022",
+    startDate: "29/02/2022",
     image: "",
   },
   {
@@ -93,7 +93,7 @@ const ProjectsList = [
     description:
       "The idea is to create a model that can be used to applications that requires online payment platforms.",
     tags: ["developpement", "web", "dev", "javascript", "php"],
-    startDate: "07/02/2017",
+    startDate: "07/02/2022",
     image: "",
   },
   {
@@ -111,7 +111,7 @@ const ProjectsList = [
       "bigdata",
       "machine learning",
     ],
-    startDate: "09/10/2021",
+    startDate: "09/11/2021",
     image: "",
   },
   {
@@ -122,7 +122,7 @@ const ProjectsList = [
     description:
       "The idea is to developp a challenge tool that would give apsiders the opportunity to show innovative and creative ideas.",
     tags: ["developpement", "web", "dev", "javascript", "innovation"],
-    startDate: "23/01/2018",
+    startDate: "23/01/2022",
     image: "",
   },
   {
@@ -133,7 +133,7 @@ const ProjectsList = [
     description:
       "The project Sanchez is about creating an internal tool that will allow a better communication between different offices.",
     tags: ["developpement", "web", "dev", "javascript", "php", "Saas"],
-    startDate: "03/11/2023",
+    startDate: "03/11/2021",
     image: "",
   },
 ];

@@ -1,16 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import "./ProjectCard.css";
-import oblivion from "../assets/oblivion.jpg";
 
 export default function ProjectCard({ data }) {
   // if (data != undefined) {
   return (
     <div>
       <div className="card-container">
-        <div>
-          <img className="projectImage" src={oblivion} alt="project-pic" />
-        </div>
         <div className="projectName">
           <h1>{data?.projectName}</h1>
         </div>
