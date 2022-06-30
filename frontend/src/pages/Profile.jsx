@@ -1,3 +1,10 @@
+import NavBar from "../components/NavBar";
+
 export default function Profile() {
-  return <h1>Profile</h1>;
+  return (
+    <div>
+      <NavBar />
+      <h1>Profil</h1>;
+    </div>
+  );
 }
