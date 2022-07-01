@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Login.css";
 import axios from "axios";
 import swal from "sweetalert";
-import NavBar from "./NavBar";
+import logo from "../assets/logo-apside-bleu.png";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +36,22 @@ function Login() {
 
   return (
     <>
-      <NavBar />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={logo}
+          alt="logo"
+          style={{
+            width: "20vw",
+            marginTop: "5vh",
+          }}
+        />
+      </div>
       <div className="login">
         <form className="form-login">
           <input
