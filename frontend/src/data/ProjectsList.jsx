@@ -87,7 +87,7 @@ const ProjectsList = [
   },
   {
     id: 7,
-    projectName: "The Marketplace Toolbox",
+    projectName: "Marketplace Toolbox",
     owner: "Sebastian Tempelmann",
     ownerOffice: "Munich",
     description:
