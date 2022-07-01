@@ -21,7 +21,7 @@ export default function Profile() {
           <div className="avatarcontainer">
             <img className="profilePic" src={`${wankul}`} alt="userpic" />
             <h1>Justin Thyme</h1>
-            <p>justin@apside.com</p>
+            <p>justin.thyme@apside.com</p>
             <p>Nantes</p>
             <h2>⚡ Javascript Developper 💻</h2>
           </div>

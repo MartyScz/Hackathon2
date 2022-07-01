@@ -67,7 +67,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="futureProjContainer">
-          <Link to="/project/3">
+          <Link to="/project">
             <div className="redCard">
               <img
                 className="projectImage"
