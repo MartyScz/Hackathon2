@@ -10,13 +10,13 @@ export default function ProjectCard({ data }) {
           <h1>{data?.projectName}</h1>
         </div>
         <div className="projectOwner">
-          <p>{data?.owner}</p>
+          <p>{`🧑 ${data?.owner}`}</p>
         </div>
         <div className="startDate">
-          <p>{`⏰ ${data?.startDate}`}</p>
+          <p>{`📆 ${data?.startDate}`}</p>
         </div>
         <div className="projectOffice">
-          <p>{data?.ownerOffice}</p>
+          <p>{`📍 ${data?.ownerOffice}`}</p>
         </div>
         <div className="description">
           <p>{data?.description}</p>
