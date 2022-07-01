@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Register.css";
 import axios from "axios";
 import swal from "sweetalert";
-import NavBar from "./NavBar";
+import logo from "../assets/logo-apside-bleu.png";
 
 function Register() {
   const [firstname, setFirstname] = useState("");
@@ -40,10 +40,25 @@ function Register() {
 
   return (
     <>
-      <NavBar />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={logo}
+          alt="logo"
+          style={{
+            width: "20vw",
+            margin: "5vh 0 5vh 0",
+          }}
+        />
+      </div>
       <div className="register">
         <div className="register-title">
-          <h2>Subscribe !</h2>
+          {/* <h2>Subscribe !</h2> */}
           <form className="form-register" onSubmit={handleSubmit}>
             <input
               className="inputFirstname"
@@ -92,6 +107,7 @@ function Register() {
             />
             <Link to="/home">
               <button
+                style={{ marginBottom: "5vh" }}
                 className="loginbutton"
                 type="submit"
                 onClick={handleSubmit}
