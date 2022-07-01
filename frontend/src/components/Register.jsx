@@ -110,7 +110,7 @@ function Register() {
                 style={{ marginBottom: "5vh" }}
                 className="regbutton"
                 type="submit"
-                onClick={handleSubmit}
+                // onClick={handleSubmit}
               >
                 REGISTER
               </button>
