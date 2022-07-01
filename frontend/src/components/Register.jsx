@@ -83,7 +83,7 @@ function Register() {
               type="office"
               name="office"
               id="office"
-              placeholder="Bruxelle"
+              placeholder="Bruxelles"
               value={office}
               onChange={(e) => setOffice(e.target.value)}
             />
@@ -112,7 +112,7 @@ function Register() {
                 type="submit"
                 onClick={handleSubmit}
               >
-                SUBMIT
+                REGISTER
               </button>
             </Link>
           </form>
