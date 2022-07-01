@@ -138,7 +138,7 @@ const ProjectsList = [
   },
   {
     id: 11,
-    projectName: "Project Undefined",
+    projectName: "Project !Undefined",
     owner: "Severine Marie ",
     ownerOffice: "Nantes",
     description:
