@@ -54,7 +54,6 @@ export default function Login() {
       </div>
       <div className="login">
         <div className="log-title">
-          <h2>Connect !</h2>
           <form className="form-login">
             <input
               className="inputLogEmail"

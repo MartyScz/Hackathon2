@@ -58,7 +58,6 @@ function Register() {
       </div>
       <div className="register">
         <div className="register-title">
-          <h2>Subscribe !</h2>
           <form className="form-register" onSubmit={handleSubmit}>
             <input
               className="inputFirstname"
@@ -107,7 +106,10 @@ function Register() {
             />
             <Link to="/home">
               <button
-                style={{ marginBottom: "5vh" }}
+                style={{
+                  marginBottom: "5vh",
+                  cursor: "pointer",
+                }}
                 className="regbutton"
                 type="submit"
                 // onClick={handleSubmit}
