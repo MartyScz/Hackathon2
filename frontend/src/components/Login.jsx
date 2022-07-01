@@ -5,7 +5,7 @@ import axios from "axios";
 import swal from "sweetalert";
 import logo from "../assets/logo-apside-bleu.png";
 
-function Login() {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -48,43 +48,44 @@ function Login() {
           alt="logo"
           style={{
             width: "20vw",
-            marginTop: "5vh",
+            margin: "5vh 0 5vh 0",
           }}
         />
       </div>
       <div className="login">
-        <form className="form-login">
-          <input
-            className="inputEmail"
-            type="text"
-            name="email"
-            id="email"
-            placeholder="nancy.goldin@apside.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            className="inputLogPassword"
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Mot de passe"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <Link to="/home">
-            <button
-              className="loginbutton"
-              type="submit"
-              onClick={handleSubmit}
-            >
-              LOG IN
-            </button>
-          </Link>
-        </form>
+        <div className="log-title">
+          <h2>Connect !</h2>
+          <form className="form-login">
+            <input
+              className="inputEmail"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="nancy.goldin@apside.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              className="inputLogPassword"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Mot de passe"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <Link to="/home">
+              <button
+                className="logbutton"
+                type="submit"
+                onClick={handleSubmit}
+              >
+                LOG IN
+              </button>
+            </Link>
+          </form>
+        </div>
       </div>
     </>
   );
 }
-
-export default Login;
