@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 import NavBar from "../components/NavBar";
 import "./AddProject.css";
 
@@ -11,6 +13,17 @@ export default function AddProject() {
   const [skills, setSkills] = useState("");
   const [departureDate, setDepartureDate] = useState(new Date());
   const [description, setDescription] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmitForm = () => {
+    swal({
+      title: "Good job!",
+      text: "Successfully send",
+      icon: "success",
+      confirmButtonText: "Done !",
+    }).then(() => navigate("/home"));
+  };
+
   return (
     <div>
       <NavBar />
@@ -28,7 +41,7 @@ export default function AddProject() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Firstname Lastname"
-              required
+              // required
             />
 
             <br />
@@ -45,7 +58,7 @@ export default function AddProject() {
               value={mail}
               onChange={(e) => setMail(e.target.value)}
               placeholder="Professional email"
-              required
+              // required
             />
             <br />
             <br />
@@ -60,7 +73,7 @@ export default function AddProject() {
               value={projectName}
               onChange={(e) => setProjectName(e.target.value)}
               placeholder="Project X"
-              required
+              // required
             />
             <br />
             <br />
@@ -74,7 +87,7 @@ export default function AddProject() {
               value={crew}
               onChange={(e) => setCrew(e.target.value)}
               placeholder="0"
-              required
+              // required
             />
             <br />
             <br />
@@ -89,7 +102,7 @@ export default function AddProject() {
               value={skills}
               onChange={(e) => setSkills(e.target.value)}
               placeholder="Be as specific as possible"
-              required
+              // required
             />
             <br />
             <br />
@@ -103,7 +116,7 @@ export default function AddProject() {
               type="date"
               value={departureDate}
               onChange={(e) => setDepartureDate(e.target.value)}
-              required
+              // required
             />
             <br />
             <br />
@@ -118,7 +131,7 @@ export default function AddProject() {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Be as specific as possible"
-              required
+              // required
             />
             <br />
             <br />
@@ -127,7 +140,9 @@ export default function AddProject() {
             </label>
             <br />
             <input type="file" name="file" />
-            <button type="submit">Submit</button>
+            <button type="button" onClick={handleSubmitForm}>
+              Submit
+            </button>
           </div>
         </form>
         <br />
