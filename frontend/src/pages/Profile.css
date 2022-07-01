@@ -1,0 +1,27 @@
+.Logosite img {
+  height: 12vh;
+  width: 12vh;
+  border-radius: 20%;
+  background-color: blueviolet;
+}
+
+.Hello h1 {
+  text-align: end;
+  font-size: 35px;
+  background-color: blue;
+}
+
+.Images {
+  display: grid;
+}
+
+.Images img {
+  height: 100%;
+  width: 100%;
+}
+
+.FakeImage2 img {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 20px;
+}

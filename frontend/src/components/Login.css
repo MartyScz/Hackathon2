@@ -19,16 +19,20 @@
 ::placeholder {
   padding-left: 20px;
   font-size: 1.1rem;
-  color: #bdc3cf;
+  color: #5abdb2;
 }
 
 .inputLogPassword,
 .inputEmail {
-  color: var(--dark-blue);
+  background-color: #222222;
 }
 
+.inputEmail {
+  color: #0099ff;
+}
 .inputLogPassword {
   margin-bottom: 10vh;
+  color: #ff0055;
 }
 
 .loginbutton {
@@ -37,12 +41,12 @@
   align-items: center;
   width: 90vw;
   max-width: 500px;
-  height: 15vw;
+  height: 70vw;
   max-height: 70px;
-  background-color: var(--mint-blue);
-  color: var(--white);
+  background-color: #00cc88;
+  color: #222222;
   border-radius: 10px;
-  font-family: var(--font);
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -50,12 +54,13 @@
   .inputLogPassword,
   .inputEmail {
     width: 30vw;
-    height: 3.8rem;
+    height: 4.5rem;
   }
   .inputLogPassword {
-    margin-bottom: 15vh;
+    margin-bottom: 8vh;
   }
   .loginbutton {
     width: 30vw;
+    height: 4rem;
   }
 }

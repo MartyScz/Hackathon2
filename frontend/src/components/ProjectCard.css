@@ -1,0 +1,237 @@
+/* Css for managing the Home Page */
+
+.home-container h2 {
+  padding: 20px;
+  text-align: center;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.futureProjContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.presentProjContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.pastProjContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+/* CSS for the individual card of a project appearing in the Home Page */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  gap: 10px;
+  height: 200px;
+  width: 400px;
+}
+
+.card-container h1 {
+  color: white;
+}
+
+.redCard {
+  background-color: #f05;
+  border-radius: 30% 30% 25% 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.redCard:hover {
+  transform: scale(1.1);
+}
+
+.greenCard {
+  background-color: #0c8;
+  border-radius: 25% 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.greenCard:hover {
+  transform: scale(1.1);
+}
+
+.blueCard {
+  background-color: #0099ff;
+  border-radius: 25% 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.blueCard:hover {
+  transform: scale(1.1);
+}
+
+.projectImage {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: 50px 25px 0px 0px;
+}
+
+.doublesearchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  margin-top: 30px;
+  border-radius: 50px;
+  background-color: #efefef;
+}
+
+.titleProject {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  gap: 60vw;
+  justify-content: center;
+  text-align: center;
+}
+.titleProject h2 {
+  margin-top: 20px;
+}
+
+.arrowtext {
+  margin-top: 50px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.searchBarDiv {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  height: 5vw;
+  width: 600px;
+  border-radius: 25px;
+}
+.searchBarDiv label {
+  text-align: center;
+}
+.searchBarDiv form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-color: none;
+}
+
+.searchBarDiv input {
+  height: 50px;
+  width: 300px;
+  margin: 5px;
+  border-radius: 50px;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.searchMainBtn {
+  height: 70px;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 25px;
+  color: white;
+  border: none;
+  background-color: #5059d4;
+}
+
+.searchMainBtn:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+.projectName {
+  font-size: 16px;
+  color: white;
+}
+
+.projectOwner {
+  color: white;
+}
+
+.projectOffice {
+  color: white;
+}
+
+.description {
+  font-size: 14px;
+  padding: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+.startDate {
+  font-size: 16px;
+  color: white;
+}
+
+.callToAction {
+  justify-content: space-around;
+  width: 600px;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.actionContainer {
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8f2d56;
+}
+
+.actionBtn {
+  border: none;
+  background-color: #d81159;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  width: 180px;
+  border-radius: 25px;
+}
+
+.actionBtn:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
