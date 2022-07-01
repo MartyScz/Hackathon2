@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsList from "../data/ProjectsList";
@@ -29,20 +29,43 @@ export default function Home() {
     <>
       <NavBar />
       <div className="home-container">
-        <div>
-          <SearchBar
-            searchTags={searchTags}
-            setSearchTags={setSearchTags}
-            searchCity={searchCity}
-            setSearchCity={setSearchCity}
-          />
+        <div className="doublesearchbar">
+          <div>
+            <SearchBar
+              searchTags={searchTags}
+              setSearchTags={setSearchTags}
+              searchCity={searchCity}
+              setSearchCity={setSearchCity}
+            />
+          </div>
+          <button
+            className="searchMainBtn"
+            type="submit"
+            onClick={handleSearch}
+          >
+            Search 🚀
+          </button>
         </div>
 
-        <button type="submit" onClick={handleSearch}>
-          Search 🚀
-        </button>
+        <div className="callToAction">
+          <div className="actionContainer">
+            <h2>Ready to innovate ? Don't hesitate !</h2>
+            <Link to="/addProject">
+              <button type="button" className="actionBtn">
+                I have an idea 💡✨
+              </button>
+            </Link>
+          </div>
+        </div>
 
-        <h2>Upcoming Projects :</h2>
+        <div className="titleProject">
+          <h2>Upcoming Projects 📣</h2>
+          <Link to="/projects/upcoming">
+            <p className="arrowtext">
+              See more <i className="arrow right" />
+            </p>
+          </Link>
+        </div>
         <div className="futureProjContainer">
           <div className="redCard">
             <img
@@ -65,13 +88,15 @@ export default function Home() {
             <ProjectCard data={ProjectsList[1]} />
           </div>
         </div>
-        {/* <Link to="/projects/upcoming"> */}
-        <button className="moreproject" type="button">
-          More projects
-        </button>
-        {/* </Link> */}
 
-        <h2>Projects in progress :</h2>
+        <div className="titleProject">
+          <h2>Projects in progress ⏳</h2>
+          <Link to="/projects/inprogress">
+            <p className="arrowtext">
+              See more <i className="arrow right" />
+            </p>
+          </Link>
+        </div>
         <div className="pastProjContainer">
           <div className="blueCard">
             <img
@@ -98,13 +123,15 @@ export default function Home() {
             <ProjectCard data={ProjectsList[9]} />
           </div>
         </div>
-        {/* <Link to="/projects/inprogress"> */}
-        <button className="moreproject" type="button">
-          More projects
-        </button>
-        {/* </Link> */}
 
-        <h2>Finished Projects :</h2>
+        <div className="titleProject">
+          <h2>Finished Projects 🎬</h2>
+          <Link to="/projects/login">
+            <p className="arrowtext">
+              See more <i className="arrow right" />
+            </p>
+          </Link>
+        </div>
         <div className="presentProjContainer">
           <div className="greenCard">
             <img className="projectImage" src={`${seo}`} alt="project-pic" />
@@ -123,11 +150,6 @@ export default function Home() {
             <ProjectCard data={ProjectsList[2]} />
           </div>
         </div>
-        {/* <Link to="/projects/finished"> */}
-        <button className="moreproject" type="button">
-          More projects
-        </button>
-        {/* </Link> */}
       </div>
     </>
   );
