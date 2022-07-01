@@ -60,20 +60,20 @@ export default function Home() {
 
         <div className="titleProject">
           <h2>Upcoming Projects 📣</h2>
-          <Link to="/projects/upcoming">
-            <p className="arrowtext">
-              See more <i className="arrow right" />
-            </p>
-          </Link>
+          <p className="arrowtext">
+            See more <i className="arrow right" />
+          </p>
         </div>
         <div className="futureProjContainer">
           <div className="redCard">
-            <img
-              className="projectImage"
-              src={`${analytics}`}
-              alt="project-pic"
-            />
-            <ProjectCard data={ProjectsList[3]} />
+            <Link to="/project">
+              <img
+                className="projectImage"
+                src={`${analytics}`}
+                alt="project-pic"
+              />
+              <ProjectCard data={ProjectsList[3]} />
+            </Link>
           </div>
           <div className="greenCard">
             <img
