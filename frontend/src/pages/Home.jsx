@@ -67,14 +67,16 @@ export default function Home() {
           </Link>
         </div>
         <div className="futureProjContainer">
-          <div className="redCard">
-            <img
-              className="projectImage"
-              src={`${analytics}`}
-              alt="project-pic"
-            />
-            <ProjectCard data={ProjectsList[3]} />
-          </div>
+          <Link to="/project/3">
+            <div className="redCard">
+              <img
+                className="projectImage"
+                src={`${analytics}`}
+                alt="project-pic"
+              />
+              <ProjectCard data={ProjectsList[3]} />
+            </div>
+          </Link>
           <div className="greenCard">
             <img
               className="projectImage"

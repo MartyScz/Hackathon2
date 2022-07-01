@@ -3,7 +3,6 @@ import React from "react";
 import "./ProjectCard.css";
 
 export default function ProjectCard({ data }) {
-  // if (data != undefined) {
   return (
     <div>
       <div className="card-container">
@@ -25,9 +24,4 @@ export default function ProjectCard({ data }) {
       </div>
     </div>
   );
-  //    } else {
-  //     <div>
-  //      <p>No project matched the research criteria</p>
-  //     </div>
-  //    }
 }
