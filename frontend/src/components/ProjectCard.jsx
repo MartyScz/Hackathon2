@@ -13,7 +13,7 @@ export default function ProjectCard({ data }) {
           <p>{data?.owner}</p>
         </div>
         <div className="startDate">
-          <p>{`⏰ ${data?.startDate}`}</p>
+          <p>{`📅  ${data?.startDate}`}</p>
         </div>
         <div className="projectOffice">
           <p>{data?.ownerOffice}</p>
