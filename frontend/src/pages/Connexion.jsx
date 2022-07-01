@@ -23,7 +23,7 @@ function Connexion() {
       <div className="div-link2">
         <Link
           to="/Register"
-          className="register-button"
+          className="reg-button"
           style={{ color: "white", marginLeft: "525px" }}
         >
           REGISTER
