@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Login.css";
 import axios from "axios";
 import swal from "sweetalert";
+import logo from "../assets/logo-apside-bleu.png";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -34,32 +35,57 @@ export default function Login() {
   };
 
   return (
-    <div className="login">
-      <form className="form-login">
-        <input
-          className="inputEmail"
-          type="text"
-          name="email"
-          id="email"
-          placeholder="nancy.goldin@apside.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+    <>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={logo}
+          alt="logo"
+          style={{
+            width: "20vw",
+            margin: "5vh 0 5vh 0",
+          }}
         />
-        <input
-          className="inputLogPassword"
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Mot de passe"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Link to="/home">
-          <button className="logbutton" type="submit" onClick={handleSubmit}>
-            LOG IN
-          </button>
-        </Link>
-      </form>
-    </div>
+      </div>
+      <div className="login">
+        <div className="log-title">
+          <h2>Connect !</h2>
+          <form className="form-login">
+            <input
+              className="inputEmail"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="nancy.goldin@apside.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              className="inputLogPassword"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Mot de passe"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <Link to="/home">
+              <button
+                className="logbutton"
+                type="submit"
+                onClick={handleSubmit}
+              >
+                LOG IN
+              </button>
+            </Link>
+          </form>
+        </div>
+      </div>
+    </>
   );
 }
