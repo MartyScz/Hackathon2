@@ -43,9 +43,6 @@
 }
 
 .logbutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40vw;
   max-width: 500px;
   height: 3.8rem;
@@ -53,6 +50,6 @@
   background-color: #00cc88;
   color: white;
   border-radius: 10px;
-  font-size: 1.5rem;
   text-decoration: none;
+  font-size: 1.3rem;
 }
