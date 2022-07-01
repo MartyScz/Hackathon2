@@ -43,7 +43,7 @@ export default function Home() {
             type="submit"
             onClick={handleSearch}
           >
-            Search 🚀
+            🔎
           </button>
         </div>
 

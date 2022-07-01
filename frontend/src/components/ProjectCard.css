@@ -165,13 +165,14 @@
 }
 
 .searchMainBtn {
-  height: 70px;
-  width: 100px;
-  border-radius: 50%;
+  height: 40px;
+  width: 80px;
+  border-radius: 50px;
   margin-left: 25px;
   color: white;
   border: none;
   background-color: #5059d4;
+  font-size: 30px;
 }
 
 .searchMainBtn:hover {
